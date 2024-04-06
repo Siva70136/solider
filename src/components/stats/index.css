@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.stat-container {
+    display: flex;
+}
+
+.title-container {
+    margin-right: 9vh;
+
+}
+
+.stat-head {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'sans-serif';
+    font-size: 1.5vh;
+    font-weight: 500;
+    line-height: 1.8vh;
+}
+
+.stat-score {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Rajdhani, sans-serif;
+    font-size: 2.8vh;
+    font-weight: 700;
+    line-height: 3.5vh;
+    position: relative;
+    top: -2vh;
+    left: 1vh;
+}
+
+
+.objects-container {
+    grid-column-gap: 6px;
+    grid-row-gap: 8px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.object-card {
+    width: 28vh;
+    height: 17vh;
+    background-color: rgba(16, 16, 16, .5);
+    position: relative;
+    margin: 2px;
+    text-align: left;
+    padding: 1vh;
+    color: white;
+    font-family: 'sans-serif';
+   
+}
+
+.obj-head {
+    letter-spacing: .15vh;
+    text-transform: uppercase;
+    font-size: 1.3vh;
+    font-weight: 600;
+    line-height: 1.8vh;
+}
+
+.img1 {
+    z-index: 2;
+    left: 10vh;
+    position: relative;
+    width: 50%;
+    filter: hue-rotate(180deg);
+    overflow: hidden;
+}
+.object-card:hover{
+    
+    color: black;
+    background-color: #fff;
+}
+
+
+.engineer {
+    width: 27%;
+}
+
+.obj-data-container {
+    position: absolute;
+    bottom: 1vh;
+    left: 1vh;
+}
+
+.obj-name {
+    letter-spacing: .05vh;
+    text-transform: capitalize;
+    font-size: 1.4vh;
+    font-weight: 600;
+    line-height: 1.8vh;
+}
+
+.obj-score {
+    letter-spacing: .05vh;
+    text-transform: none;
+    font-size: 1.3vh;
+    font-weight: 600;
+    line-height: 1.8vh;
+
+}

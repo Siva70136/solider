@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from 'react';
+import { MenuProvider } from './context/themecontext';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './components/Home';
+import More from './components/more'
+import Campaign from './components/campaign'
+import Home2 from './components/Home2'
+import Store from './components/store'
+import Multiplayer from './components/multiplayer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  render() {
+    return (
+      <BrowserRouter>
+        <MenuProvider>
+          <Routes>
+            <Route exact path='/' Component={Home2} />
+            <Route exact path='/solider' Component={Home} />
+            <Route exact path='/more' Component={More} />
+            <Route exact path='/campaign' Component={Campaign} />
+            <Route exact path='/store' Component={Store} />
+            <Route exact path='/multiplayer' Component={Multiplayer} />
+          </Routes>
+        </MenuProvider>
+      </BrowserRouter>
+
+    )
+  }
 }
-
 export default App;
