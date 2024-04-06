@@ -9,7 +9,7 @@ const TopMenu = () => {
         <div className="main-menu-container">
             <div className='top-menu-container'>
                 <Link
-                    to="/"
+                    to="/home"
                     className='nav-link'
                     onClick={() => { onChange('home') }}>
                     <div className='item'>

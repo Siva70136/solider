@@ -15,8 +15,9 @@ class App extends Component {
       <BrowserRouter>
         <MenuProvider>
           <Routes>
-            <Route exact path='/' Component={Home2} />
+            <Route exact path='/' Component={Home} />
             <Route exact path='/solider' Component={Home} />
+            <Route exact path='/home' Component={Home2} />
             <Route exact path='/more' Component={More} />
             <Route exact path='/campaign' Component={Campaign} />
             <Route exact path='/store' Component={Store} />
